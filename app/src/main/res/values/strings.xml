@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Not A Trolling Game</string>
+    <string name="are_you_dumb">Are You Dumb?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="back">Back</string>
+    <string name="start">Start</string>
+    <string name="next">Next</string>
+    <string name="high_score">High-Score</string>
+    <string name="image">Image</string>
+    <string name="pres_me">Press Me</string>
+</resources>
