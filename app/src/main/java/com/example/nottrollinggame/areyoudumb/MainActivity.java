@@ -34,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
             AreYouDumb1.finish = 1;
+            AreYouDumb2.finish = 1;
+            MainPage.finish = 1;
             finish();
         });
     }

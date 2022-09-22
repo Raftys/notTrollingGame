@@ -12,11 +12,14 @@ import com.example.nottrollinggame.*;
 
 public class AreYouDumb2 extends AppCompatActivity {
 
+    static int finish;
+
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_are_you_dumb2);
+        finish = 0;
 
         int clicks = getIntent().getIntExtra("clicks",0);
 
@@ -50,7 +53,15 @@ public class AreYouDumb2 extends AppCompatActivity {
             e.printStackTrace();
         }
         AreYouDumb1.finish = 1;
+        MainPage.finish = 1;
         finish();
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        if(finish == 1)
+            finish();
     }
 
     public void alert(String title, String question, String positiveAnswer, String negativeAnswer, int spam) {

@@ -17,11 +17,14 @@ import com.example.nottrollinggame.areyoudumb.AreYouDumb1;
 public class MainPage extends AppCompatActivity {
 
     public static Animation scale_up, scale_down;
+    public static int finish;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_page);
+
+        finish = 0;
 
         ImageButton start = findViewById(R.id.start);
         ImageButton high_score = findViewById(R.id.score);
@@ -51,6 +54,13 @@ public class MainPage extends AppCompatActivity {
                     (dialog, which) -> dialog.dismiss());
             alertDialog.show();
         });
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        if(finish == 1)
+            finish();
     }
 
     @SuppressLint("ClickableViewAccessibility")
