@@ -1,5 +1,5 @@
 # notTrollingGame
 
-notTrollingGame is a Java-based trolling game :D
+notTrollingGame is a Java-based Android game designed with a humorous, trolling concept.
 
 ## Technologies Used
